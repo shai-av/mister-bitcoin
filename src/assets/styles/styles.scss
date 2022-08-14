@@ -1,0 +1,32 @@
+// Externals
+
+// Setup
+@import "setup/variables";
+@import "setup/functions";
+@import "setup/mixins";
+
+// Basics
+@import "basics/typography";
+@import "basics/base";
+@import "basics/helpers";
+@import "basics/layout";
+@import "basics/modals";
+@import "basics/animations";
+
+.main-app {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    .app-header {
+        background-color: gold;
+    }
+
+    main {
+        flex-grow: 1;
+    }
+
+    > footer {
+        background-color: #111;
+        color: white;
+    }
+}
